@@ -1,6 +1,5 @@
 let completed = false
 
-
 const remove = () => {
     event.target.parentNode.remove()
 }
