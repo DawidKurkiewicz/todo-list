@@ -27,6 +27,7 @@ const addTask = (e) => {
 
 
 form.addEventListener('submit', addTask)
+
 const input1 = document.querySelectorAll('input')[1];
 const searchTask = (e) => {
     const searchText = e.target.value.toLowerCase()
