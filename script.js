@@ -29,7 +29,7 @@ const addTask = (e) => {
 
  ul.appendChild(task);
  input.value = "";
- // const liItems = document.querySelectorAll('li.task').length;
+//  const liItems = document.querySelectorAll('li.task').length;
  taskNumber.textContent = listItems.length;
  task.querySelector('button').addEventListener('click', removeTask);
 
@@ -47,7 +47,7 @@ form.addEventListener('submit', addTask)
 const input1 = document.querySelectorAll('input')[1];
 const searchTask = (e) => {
     const searchText = e.target.value.toLowerCase()
-    let tasks = [...listItems];
+    let tasks = toDoList;
     console.log(tasks);
     tasks = tasks.filter(li => li.textContent.toLowerCase().includes(searchText))
     console.log(tasks);
